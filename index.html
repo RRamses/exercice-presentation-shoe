@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .corps{
+            display: flex;
+            border: 1px solid red;
+            width: 600px;
+            height: 500px;
+            margin: 50px;
+            
+        }
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-image: url("bg.jpg" );
+           
+        }
+
+        .corps_gauche{
+            background-color: white;
+            height: 500px;
+            width: 55%;
+        }
+        .corps_droit{
+            background-color: orangered;
+            width:45% ;
+            height: 500px;
+           
+        }
+
+        .inp{
+            display: block;
+           margin-top: 25px;
+            width: 75%;
+            height: 45px;
+            margin-left: 25px;
+        }
+
+        .zert{
+           display: flex;
+           padding-top: 10px;
+          
+            
+
+        }
+        .tp{
+            width: 30%;
+             height: 45px;
+             margin-right: 20px;
+             margin-top: 10px;
+
+        }
+
+        .payer{
+            
+            margin-top: 30px;
+            height: 50px;
+            
+            
+            display: flex;
+            align-items: end;
+            justify-content: center;
+        }
+
+        .bouton{
+            border-radius: 25px;
+            height: 50px;
+            background-color: orangered;
+            width: 78%;
+            color: white;
+            margin-right: 10px;
+
+
+
+        }
+
+        .shoes{
+            height: 350px;
+            width:100% ;
+            border: solid blue 0px;
+            
+           
+        }
+
+       .shoes img{
+           
+            height: 250px;
+            width: 280px;
+             z-index: 9999;
+            
+
+        }
+
+
+        .puma{
+            display: block;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            height: 30%;
+            width: 100%;
+            border: solid yellow 0px;
+           
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            
+            
+
+        }
+        
+        
+
+    </style>
+</head>
+<body>
+   
+    <div class="corps">
+        <div class="corps_droit">
+
+           <div class="shoes"> 
+            <img src="product.png" class="img">
+            
+               
+           </div>
+
+           <div class="puma">
+               <p> <center>PUMA MEN'S<br>SNEAKERS<br>$0</center></p>
+               
+               
+
+
+           </div>
+    
+    </div>
+     
+        <div class="corps_gauche">
+            <h1 > <center>Payment Section</center></h1>
+            <form action="">
+                <input class="inp" type="text" placeholder="Coding Market">
+                <input class="inp" type="text" placeholder="Cardholder Name">
+                <div class="zert">
+                <input class="inp tp" type="text" placeholder="Expiry Date">
+                <input class="inp tp" type="text" placeholder="CVV">
+            </div>
+            <div class="payer">
+                <button class=" bouton" >Pay</button>
+            </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html> 
